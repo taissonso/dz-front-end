@@ -116,6 +116,7 @@ nav {
 .dropdown__content a:hover {
     color: #38C1C9;
     font-weight: 700;
+    cursor: default;
 }
 
 .nav__dropdown:hover .btn__drop {
