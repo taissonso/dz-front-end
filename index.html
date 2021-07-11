@@ -17,8 +17,12 @@
 <body>
     <header>
         <nav>
-            <img src="assets/logo.png" alt="">
-            <div class="nav__bar__desktop">
+            <img id="nav__logo" src="assets/logo.png" alt="">
+            <div class="nav__bar" id="nav__menu">
+                <div class="mobile__option">
+                    <img id="close__icon" src="assets/close.png">
+                    <img id="menu__icon" src="assets/menu.png">
+                </div>
                 <div class="nav__dropdown">
                     <button class="btn__drop">sobre nós<img src="assets/down.png"></button>
                     <div class="dropdown__content">
@@ -31,7 +35,7 @@
                 <div class="nav__dropdown">
                     <button class="btn__drop">destinos<img src="assets/down.png"></button>
                     <div class="dropdown__content">
-                        <a href="#">Link 1</a>
+                        <a href="#section__houses">Casas</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
                     </div>
@@ -39,7 +43,7 @@
                 <div class="nav__dropdown">
                     <button class="btn__drop">acomodações<img src="assets/down.png"></button>
                     <div class="dropdown__content">
-                        <a href="#">Link 4</a>
+                        <a href="#section__about">Nossas acomodações</a>
                         <a href="#">Link 5</a>
                         <a href="#">Link 6</a>
                     </div>
@@ -47,7 +51,7 @@
                 <div class="nav__dropdown">
                     <button class="btn__drop">contato<img src="assets/down.png"></button>
                     <div class="dropdown__content">
-                        <a href="#">Link 4</a>
+                        <a href="#section__form">Fale conosco</a>
                         <a href="#">Link 5</a>
                         <a href="#">Link 6</a>
                     </div>
@@ -57,92 +61,125 @@
     </header>
 
     <section class="section__banner">
-        <h1>melhores destinos</h1>
-        <p>Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado faz parte de um processo de 
-            gestão de alternativas às soluções ortodoxas.
-        </p>
+        <div class="slide__show">
+            <div class="slides mostrar">
+                <div class="slide__text">
+                    <h1>melhores destinos</h1>
+                    <p>Percebemos, cada vez mais, que o novo modelo estrutural aqui preconizado faz parte de um processo
+                        de
+                        gestão de alternativas às soluções ortodoxas.
+                    </p>
+                </div>
+                <img class="slides__img" src="assets/bg-banner.png">
+            </div>
+
+            <div class="slides mostrar">
+                <div class="slide__text">
+                    <h1>lugares incríveis</h1>
+                    <p>Queremos ofercer o melhor para que você possa desfrutar das coisas simples de maneira segura e
+                        tranquila
+                    </p>
+                </div>
+                <img class="slides__img" src="assets/baneer-inteiro.png">
+            </div>
+
+            <img class="prev" src="assets/prev.png" alt="">
+            <img class="next" src="assets/next.png" alt="">
+
+        </div>
+
 
     </section>
 
-    <section class="section__houses">
+    <section class="section__houses" id="section__houses">
         <h2>o que você procura?</h2>
         <hr>
         <div class="tipos__casas">
             <div class="cada__casa">
                 <img src="assets/casa-1.png" alt="Casa no campo">
                 <span class="title__casa">casa no campo</span>
-                <p class="p__casa">Neste sentido, a mobilidade dos capitais internacionais acarreta um processo de reformulação e modernização.</p>
+                <p class="p__casa">Neste sentido, a mobilidade dos capitais internacionais acarreta um processo de
+                    reformulação e modernização.</p>
             </div>
             <div class="cada__casa">
                 <img src="assets/casa-2.png" alt="Casa na praia">
                 <span class="title__casa">casa na praia</span>
-                <p class="p__casa">É importante questionar o quanto o surgimento do comércio virtual representa uma abertura.</p>
+                <p class="p__casa">É importante questionar o quanto o surgimento do comércio virtual representa uma
+                    abertura.</p>
             </div>
             <div class="cada__casa">
                 <img src="assets/casa-3.png" alt="Casa urbana">
                 <span class="title__casa">casa urbana</span>
-                <p class="p__casa">O empenho em analisar o acompanhamento das preferências de consumo oferece uma interessante</p>
+                <p class="p__casa">O empenho em analisar o acompanhamento das preferências de consumo oferece uma
+                    interessante</p>
             </div>
         </div>
-    </section>
 
-    <section class="section__about">
-        <h2>sobre as nossas acomodações</h2>
-        <hr>
-        <div class="div__acomodacoes">
-            <div class="about__acomodacoes">
-                <span class="title__casa">sobre o apartamento</span>
-                <p class="p__acomodacoes">O que temos que ter sempre em mente é que a determinação clara de objetivos cumpre um 
-                    papel essencial na formulação do sistema de participação geral. Percebemos, cada vez mais, que a consulta aos 
-                    diversos militantes promove a alavancagem das novas proposições.
-                </p>
-                <button class="btn__acomodacoes">saber mais</button>
-            </div>
-            <div class="about__acomodacoes">
-                <span class="title__casa">sobre a casa</span>
-                <p class="p__acomodacoes">As experiências acumuladas demonstram que a execução dos pontos do programa ainda 
-                    não demonstrou convincentemente que vai participar na mudança das formas de ação. Desta maneira, a 
-                    consulta aos diversos militantes promove a alavancagem de todos os recursos funcionais envolvidos.
-                </p>
-                <button class="btn__acomodacoes">saber mais</button>
+        <div class="section__about" id="section__about">
+            <h2>sobre as nossas acomodações</h2>
+            <hr>
+            <div class="div__acomodacoes">
+                <div class="about__acomodacoes">
+                    <span class="title__casa">sobre o apartamento</span>
+                    <p class="p__acomodacoes">O que temos que ter sempre em mente é que a determinação clara de
+                        objetivos
+                        cumpre um
+                        papel essencial na formulação do sistema de participação geral. Percebemos, cada vez mais, que a
+                        consulta aos
+                        diversos militantes promove a alavancagem das novas proposições.
+                    </p>
+                    <button class="btn__acomodacoes">saber mais</button>
+                </div>
+                <div class="about__acomodacoes">
+                    <span class="title__casa">sobre a casa</span>
+                    <p class="p__acomodacoes">As experiências acumuladas demonstram que a execução dos pontos do
+                        programa
+                        ainda
+                        não demonstrou convincentemente que vai participar na mudança das formas de ação. Desta maneira,
+                        a
+                        consulta aos diversos militantes promove a alavancagem de todos os recursos funcionais
+                        envolvidos.
+                    </p>
+                    <button class="btn__acomodacoes">saber mais</button>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section class="section__form">
-        <h5>ficou interessado?</h5>
-        <p>Preencha o formulário e entre em contato conosco! </p>
-
-        <form class="form" action="" autocomplete="off">
-            <div>
-                <label class="teste" for="name">NOME:</label>
-                <input type="text" name="name" id="name" placeholder="" autocomplete="off">
-                <span class="error erro__nome">ERRO</span>
-            </div>
-
-            <div>
-                <label for="email">E-MAIL:</label>
-                <input type="text" name="email" id="email" placeholder="">
-                <span class="error erro__email">ERRO</span>
-            </div>
-
-           <div>
-                <label for="phone">TELEFONE:</label>
-                <input type="text" name="phone" id="phone" placeholder="" maxlength="12">
-                <span class="error erro__phone">ERRO</span>
-           </div>
-
-            <div>
-                <label for="message">MENSAGEM:</label>
-                <textarea name="message" id="message" cols="5" rows="10"></textarea>
-                <span class="error erro__message">ERRO</span>
-               
-            </div>
-            <div>
-                <!-- <br> -->
-                <input type="submit" id="btn__submit" class="btn__acomodacoes">
-            </div>
-        </form>
+        <div class="section__form" id="section__form">
+            <h5>ficou interessado?</h5>
+            <p>Preencha o formulário e entre em contato conosco! </p>
+    
+            <form class="form" action="" autocomplete="off">
+                <div>
+                    <label class="nome" for="name">NOME:</label>
+                    <input type="text" name="name" id="name" placeholder="" autocomplete="off">
+                    <span class="error erro__nome">ERRO</span>
+                </div>
+    
+                <div>
+                    <label for="email">E-MAIL:</label>
+                    <input type="text" name="email" id="email" placeholder="">
+                    <span class="error erro__email">ERRO</span>
+                </div>
+    
+                <div>
+                    <label for="phone">TELEFONE:</label>
+                    <input type="text" name="phone" id="phone" placeholder="" maxlength="12">
+                    <span class="error erro__phone">ERRO</span>
+                </div>
+    
+                <div>
+                    <label for="message">MENSAGEM:</label>
+                    <textarea name="message" id="message" cols="5" rows="10"></textarea>
+                    <span class="error erro__message">ERRO</span>
+    
+                </div>
+                <div>
+                    <br>
+                    <input type="submit" id="btn__submit" class="btn__acomodacoes">
+                </div>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -160,7 +197,7 @@
     <div id="modal">
         <div id="moldura-modal">
             <span>obrigado pelo seu contato<br>retornaremos o quanto antes</span>
-            <button id="btn__modal"class="btn__acomodacoes">fechar</button>
+            <button id="btn__modal" class="btn__acomodacoes">fechar</button>
         </div>
     </div>
 
