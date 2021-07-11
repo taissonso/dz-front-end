@@ -58,7 +58,6 @@ onload = () => {
         }
     }
 
-
     const validadePhone = () => {
         var phone = document.querySelector('#phone').value;
         var erroPhone = document.querySelector('.erro__phone');
@@ -80,8 +79,6 @@ onload = () => {
         }
     }
 
-
-
     const validadeMensagem = () => {
         let message = document.querySelector('#message').value;
         var erroNome = document.querySelector('.erro__message');
@@ -102,7 +99,6 @@ onload = () => {
             return 0;
         }
     }
-
 
     const maskPhone = () => {
         var phone = document.querySelector('#phone').value;
@@ -128,7 +124,6 @@ onload = () => {
     }
 
     function showSlides(n) {
-        let i;
         let slides = document.getElementsByClassName("slides");
         
         if (n > slides.length) {
@@ -137,7 +132,8 @@ onload = () => {
         if (n < 1) {
             indexGeral = slides.length;
         }
-        for (i = 0; i < slides.length; i++) {
+
+        for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         
@@ -145,13 +141,22 @@ onload = () => {
     }
 
     const openMenu = () => {
+        let links = document.querySelectorAll('.dropdown__content');
         let menu = document.querySelector('#nav__menu');
-        
+
+        for (const link of links) {
+            link.style.visibility = 'visible';
+        }
         menu.className === "nav__bar" ?  menu.className += " nav__open" :  menu.className = "nav__bar";
     }
 
     const closeMenu = () => {
         let menu = document.querySelector('#nav__menu');
+        let links = document.querySelectorAll('.dropdown__content');
+        
+        for (const link of links) {
+            link.style.visibility = 'hidden';
+        }
         menu.className === "nav__bar" ?  menu.className -= " nav__open" :  menu.className = "nav__bar";
     }
 
@@ -164,5 +169,13 @@ onload = () => {
     document.querySelector('#close__icon').onclick = closeMenu;
     document.querySelector('.next').onclick = () => updateSlide(1);
     document.querySelector('.prev').onclick = () => updateSlide(-1);
+
+    document.querySelector('#link-1').onclick = closeMenu;
+    document.querySelector('#link-2').onclick = closeMenu;
+    document.querySelector('#link-3').onclick = closeMenu;
+    document.querySelector('#link-4').onclick = closeMenu;
+    document.querySelector('#link-5').onclick = closeMenu;
+    document.querySelector('#link-6').onclick = closeMenu;
+    document.querySelector('#link-7').onclick = closeMenu;
    
 }

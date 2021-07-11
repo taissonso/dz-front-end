@@ -211,13 +211,8 @@ nav {
     border: 6px solid #FFFFFF;
     text-align: center;
     padding: 2vw 2vw;
-
     padding: 2vw 2.5vw;
     position: relative;
-    /* top: -5vw; */
-    /* position: absolute;
-    margin-left: 25vw; */
-    /* top: 20vh; */
 }
 
 .section__banner p {
@@ -233,6 +228,7 @@ nav {
     text-align: center;
     color: #ffffff;
     position: relative;
+    top: 1vw;
 } 
 
 .section__houses {
@@ -253,8 +249,6 @@ nav {
     color: #656666;
     text-align: center;
     text-transform: uppercase;
-    /* position: relative;
-    top: 50px; */
 }
 
 .section__houses hr {
@@ -268,17 +262,13 @@ nav {
 
 .tipos__casas {
     width: 60vw;
-    /* height: 400px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* position: relative;
-    top: 5vw; */
     padding-top: 5vw;
 }
 
 .cada__casa {
-    /* height: 100%; */
     width: 20vw;
     display: flex;
     flex-direction: column;
@@ -305,7 +295,6 @@ nav {
 }
 
 .p__casa {
-    /* width: 226px; */
     font-family: 'Roboto Normal';
     font-style: normal;
     font-weight: 100;
@@ -334,7 +323,6 @@ nav {
     color: #656666;
     text-align: center;
     text-transform: uppercase;
-    /* padding-top: 30px; */
 }
 
 .section__about hr {
@@ -348,7 +336,6 @@ nav {
 
 .div__acomodacoes {
     width: 70vw;
-    /* height: 254px; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -526,7 +513,6 @@ label {
 
 footer {
     height: 68px;
-    /* height: 10vh; */
     background: #E5E5E5;
     display: flex;
     flex-direction: row;
@@ -668,7 +654,6 @@ footer {
         overflow-y: hidden;
         background-color: rgb(1,0,0);
         background-color: rgba(255,255,255, 1);
-        /* transition: 0.8s; */
         z-index: 9999;
     }
 
@@ -778,8 +763,6 @@ footer {
     form {
         width: 80%;
     }
-
-
 }
 
 
@@ -1008,6 +991,10 @@ footer {
 
     .form {
         width: 80vw;
+    }
+
+    #message {
+        padding-right: 22px;
     }
 
     #btn__submit {
